@@ -1,0 +1,14 @@
+.back-to-top {
+	color: inherit !important;
+	text-decoration: none !important;
+
+	.fa {
+		margin-left: .5em; // Relative to text size
+		transform: translateY( 0 );
+		transition: transform 200ms ease;
+	}
+
+	&:hover .fa {
+		transform: translateY( -.25em );
+	}
+}

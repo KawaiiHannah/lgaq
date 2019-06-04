@@ -1,0 +1,15 @@
+// Overwrite this based on design
+.container,
+.container-fluid {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.page-content {
+	padding-bottom: $spacer * 2;
+
+	@include media-breakpoint-up( sm ) {
+		padding-bottom: $spacer * 5;
+	}
+}

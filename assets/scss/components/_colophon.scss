@@ -1,0 +1,8 @@
+.colophon {
+	font-size: _calc-rem( 15px ); // Unique to this element
+	line-height: _calc-rem( 25px );
+
+	[class^="col"]:last-of-type() {
+		text-align: right;
+	}
+}
