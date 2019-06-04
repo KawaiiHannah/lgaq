@@ -7,7 +7,7 @@ h1,
 .h1,
 h2,
 .h2 {
-	font-family: $headings-font-family;
+	font-family: $font-family-script;
 }
 
 h1,
@@ -22,5 +22,21 @@ h2,
 
 h3,
 .h3 {
-	
+	line-height: _calc-rem( 25px );
+	font-weight: $font-weight-semi-bold;
+	color: theme-color( primary );
+}
+
+h4,
+.h4 {
+	line-height: _calc-rem( 25px );
+	text-transform: uppercase;
+	font-weight: $font-weight-bold;
+}
+
+h5,
+.h5 {
+	line-height: _calc-rem( 25px );
+	font-weight: $font-weight-semi-bold;
+	color: theme-color( primary );
 }
