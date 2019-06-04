@@ -1,0 +1,13 @@
+/**
+ * Some basic Sass functions for calculating items
+ */
+
+/**
+ * Calculate the rem equivalent of a px value
+ * @param  number $target      Supplied pixel number
+ * @param  number (px) $base: $font-size-base The base rem font size for calculation
+ * @return number        Returns the calculated rem size
+ */
+@function _calc-rem( $target, $base: $font-size-base ) {
+	@return ( $target / $base ) * 1rem;
+}
