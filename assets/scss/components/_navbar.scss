@@ -58,11 +58,3 @@
 		font-size: _calc-rem( 18px );
 	}
 }
-
-.navbar-brand {
-	font-size: $h1-font-size; // Not @extending, because the algorithm is too greedy
-
-	@include media-breakpoint-up( md ) {
-		font-size: _calc-rem( 42px ); // Font size changes on larger screens
-	}
-}

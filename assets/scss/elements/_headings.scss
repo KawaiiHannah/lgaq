@@ -7,8 +7,18 @@ h1,
 .h1,
 h2,
 .h2,
-.navbar-brand {
+.navbar-brand,
+.display-heading {
 	font-family: $font-family-script;
+}
+
+.display-heading,
+.navbar-brand {
+	font-size: $h1-font-size; // Not @extending, because the algorithm is too greedy
+
+	@include media-breakpoint-up( md ) {
+		font-size: _calc-rem( 42px ); // Font size changes on larger screens
+	}
 }
 
 h1,
