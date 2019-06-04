@@ -6,12 +6,14 @@
 h1,
 .h1,
 h2,
-.h2 {
+.h2,
+.navbar-brand {
 	font-family: $font-family-script;
 }
 
 h1,
-.h1 {
+.h1,
+.navbar-brand {
 	line-height: _calc-rem( 50px );
 }
 

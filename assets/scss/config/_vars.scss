@@ -7,6 +7,8 @@ $primary:                      #009586; // Teal
 $secondary:                    #2b2b2b; // Black/Charcoal
 $light:                        #e2e2e2; // Light grey
 $gray-900:                     $secondary; // Set the dark grey to ours
+$white:                        #fff; // Needs to be set because we're including before Bootstrap core
+$dark:                         $secondary; // Used in navbar etc
 
 
 // Typefaces
@@ -28,3 +30,8 @@ $h4-font-size:                 1.125rem; // 18px / 16px
 $h5-font-size:                 1rem; // 16px / 16px (heh)
 $h6-font-size:                 .875rem; // Was not defined, used equiv downsizing from above
 
+
+
+// Navbar
+$navbar-dark-color:            $white;
+$navbar-nav-link-padding-x:    .8125rem;

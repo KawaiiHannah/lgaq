@@ -1,0 +1,68 @@
+/**
+ * Adjustments to the navbar
+ */
+
+.navbar-expand {
+
+	// Set the flex row to column on small screens, but keep nav items inline
+	@include media-breakpoint-down( xs ) {
+		flex-flow: column;
+	}
+}
+
+.navbar-expand .navbar-nav {
+
+	// Set the flex row to column on small screens, but keep nav items inline
+	@include media-breakpoint-down( xs ) {
+		justify-content: center;
+	}
+}
+
+.navbar-expand > .container {
+
+	// Set the flex row to column on small screens, but keep nav items inline
+	@include media-breakpoint-down( xs ) {
+		flex-wrap: wrap;
+	}
+}
+
+.navbar-brand {
+	margin-bottom: 0; // Remove margin to properly vertically center items
+
+	@include media-breakpoint-down( xs ) {
+		padding-bottom: 0; // Remove bottom padding on small screens
+	}
+}
+
+.navbar-brand,
+.navbar-header,
+.navbar-nav {
+
+	// Set the flex row to column on small screens, but keep nav items inline
+	@include media-breakpoint-down( xs ) {
+		width: 100%;
+	}
+}
+
+.nav-link {
+	font-size: _calc-rem( 14px );
+	text-transform: uppercase;
+	font-weight: $font-weight-bold;
+	line-height: _calc-rem( 25px );
+
+	@include media-breakpoint-up( sm ) {
+		font-size: _calc-rem( 16px );
+	}
+
+	@include media-breakpoint-up( lg ) {
+		font-size: _calc-rem( 18px );
+	}
+}
+
+.navbar-brand {
+	font-size: $h1-font-size; // Not @extending, because the algorithm is too greedy
+
+	@include media-breakpoint-up( md ) {
+		font-size: _calc-rem( 42px ); // Font size changes on larger screens
+	}
+}
