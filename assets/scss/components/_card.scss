@@ -1,0 +1,92 @@
+/**
+ * Card Styles
+ */
+
+.card {
+	box-shadow: 0 3px 6px rgba( 0, 0, 0, .15 ); 
+	text-decoration: none !important; // Really don't want this showing up
+	color: inherit !important;
+	transition: all 200ms ease;
+
+	&:link:hover {
+		box-shadow: 0 3px 10px rgba( 0, 0, 0, .15 ); 
+	}
+}
+
+.card-img-container {
+
+	@include border-top-radius($card-inner-border-radius); // Pulled from core to match
+	position: relative;
+	overflow: hidden;
+	height: 150px;
+
+	@include media-breakpoint-up( sm ) {
+		height: 145px; // Does this even need to change here? It goes down and goes back up again
+	}
+
+	@include media-breakpoint-up( lg ) {
+		height: 150px;
+	}
+
+	> img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate( -50%, -50% );
+	}
+}
+
+.card-deck {
+	flex-direction: column;
+
+	> .card {
+		margin-bottom: $grid-gutter-width; // Give some vertical spacing between
+	}
+
+	@include media-breakpoint-up( sm ) {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		> .card {
+			flex-grow: 1;
+			width: calc( 50% - #{ $grid-gutter-width } );
+			flex: none;
+		}
+	}
+
+	@include media-breakpoint-up( lg ) {
+
+		> .card {
+			width: calc( 33.333% - #{ $grid-gutter-width } );
+		}
+	}
+}
+
+
+/**
+ * Alt styling for a dark card, with vertical image
+ */
+.card-alt {
+	position: relative;
+	overflow: hidden;
+
+	.card-img-container {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 30%;
+		border-top-left-radius: 0; // Don't round this one
+
+		> img {
+			width: auto;
+			height: 100%;
+		}
+	}
+
+	.card-body {
+		width: 70%;
+		background-color: theme_color( secondary );
+		color: $white !important;
+	}
+}
