@@ -1,0 +1,6 @@
+p {
+	@include media-breakpoint-up( md ) {
+		font-size: _calc-rem( 14px );
+		line-height: _calc-rem( 23px );
+	}
+}

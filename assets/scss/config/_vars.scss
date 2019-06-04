@@ -34,8 +34,10 @@ $h4-font-size:                 1.125rem; // 18px / 16px
 $h5-font-size:                 1rem; // 16px / 16px (heh)
 $h6-font-size:                 .875rem; // Was not defined, used equiv downsizing from above
 
-
-
 // Navbar
 $navbar-dark-color:            $white;
 $navbar-nav-link-padding-x:    .8125rem;
+
+
+// List Group
+$list-group-item-padding-y:    1.5rem; // Double the original
