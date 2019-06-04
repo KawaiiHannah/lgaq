@@ -1,0 +1,19 @@
+/**
+ * Large banner area
+ * We begin by loading a small image for smaller screens to better optimise mobile load and performance. This gets switched out with a larger one on larger screens.
+ */
+
+.hero {
+	
+	background-image: url('../img/beach-hero-sm.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 250px;
+
+	// Load a larger image for larger screens
+	@include media-breakpoint-up( md ) {
+		height: 500px;
+		background-image: url('../img/beach-hero-lg.jpg');
+	}
+}
