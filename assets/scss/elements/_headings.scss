@@ -52,3 +52,10 @@ h5,
 	font-weight: $font-weight-semi-bold;
 	color: theme-color( primary );
 }
+
+.content-title {
+	// Essentially changes to an h1 at large screens
+	@include media-breakpoint-up( md ) {
+		font-size: $h1-font-size;
+	}
+}
