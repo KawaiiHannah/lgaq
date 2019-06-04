@@ -9,8 +9,9 @@ $light:                        #e2e2e2; // Light grey
 
 
 // Typefaces
-$font-family-sans-serif:      'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; // Main font stack
-$headings-font-family:         Satisfy, script;
+$font-family-sans-serif:       'Muli', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; // Main font stack
+$font-family-script:           'Satisfy', script;
+$headings-font-family:         $font-family-sans-serif;
 
 
 // Text Sizing
@@ -18,9 +19,10 @@ $font-size-base:               0.8125rem; // 13px / 16px (bootstrap requires rem
 $font-weight-base:             300;
 $line-height-base:             1.6155; // 21px / 13px (bootstrap base uses a float)
 
-$h1-font-size:                 3.125rem; // 50px / 16px
+$h1-font-size:                 2.25rem; // 36px / 16px
 $h2-font-size:                 2rem; // 32px / 16px
 $h3-font-size:                 1.375rem; // 22px / 16px
 $h4-font-size:                 1.125rem; // 18px / 16px
 $h5-font-size:                 1rem; // 16px / 16px (heh)
 $h6-font-size:                 .875rem; // Was not defined, used equiv downsizing from above
+

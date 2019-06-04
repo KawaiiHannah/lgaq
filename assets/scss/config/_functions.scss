@@ -8,6 +8,6 @@
  * @param  number (px) $base: $font-size-base The base rem font size for calculation
  * @return number        Returns the calculated rem size
  */
-@function _calc-rem( $target, $base: $font-size-base ) {
+@function _calc-rem( $target, $base: 16px ) {
 	@return ( $target / $base ) * 1rem;
 }

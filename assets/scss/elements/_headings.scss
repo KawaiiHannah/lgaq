@@ -1,0 +1,26 @@
+/**
+ * Specific heading styles for the project
+ */
+
+// Set a specific font for the display headings
+h1,
+.h1,
+h2,
+.h2 {
+	font-family: $headings-font-family;
+}
+
+h1,
+.h1 {
+	line-height: _calc-rem( 50px );
+}
+
+h2,
+.h2 {
+	line-height: _calc-rem( 50px );
+}
+
+h3,
+.h3 {
+	
+}
